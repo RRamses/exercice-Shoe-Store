@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+ 
+ <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .navigateur{
+      height: 45px;
+     display: flex;
+     justify-content: space-between;
+     box-shadow: 10px 10px 0px 1px;
+  
+    }
+
+    
+  .option{
+   
+    display: flex;
+    height: 40px;
+    width:500px;
+
+
+
+  }
+
+  .profil{
+
+    display: flex;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    justify-content: space-around;
+  
+
+
+  }
+
+  .logo{
+    height: 40px;
+    width: 30%;
+    object-fit: cover;
+    padding-left: 10px;
+  padding-top:10px;  }
+    
+    .opt{
+      height: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    cursor: pointer;
+
+    }
+
+    .profil img{
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+    }
+
+    .box{
+      margin: 100px;
+      margin-left: 200px;
+      height: 500px;
+      width: 1000px;
+     
+      display: flex;
+
+    }
+
+    .box1{
+      
+      height: 500px;
+      width: 40%;
+     
+      display: block;
+
+    }
+    .box2{
+      display: block;
+      
+      height: 500px;
+      width: 60%;
+ 
+    }
+
+    .box2-text{
+     
+      padding-left: 50px;
+      height: 300px;
+     
+      font-size:  20px;
+
+    }
+
+    .prix{
+      height: 100px;
+     
+      display: flex;
+      width: 140px;
+      flex-wrap: wrap;
+      padding-left: 50px;
+      
+
+    }
+
+    .commande{
+      height: 75px;
+     
+      display: flex;
+      justify-content: space-around;
+      align-self: center;
+      padding-top: 15px;
+
+    }
+    .reduction{
+      margin-left: 15px;
+      background-color: rgb(243, 222, 225);
+      padding-top: 7px;
+    }
+
+    .payer{
+      height: 50px;
+     
+     
+    }
+    .quantite{
+      display: flex;
+      background-color: rgb(247, 230, 230);
+     
+      width: 20%;
+      
+      height: 30px;
+     
+    }
+   
+    
+    .btn{
+      height: 50px;
+      width: 250px;
+      color: white;
+      background-color: orange;
+      border-radius: 10px;
+     justify-items: center;
+      cursor: pointer;
+
+    }
+
+    .btn-Q{
+      height: 50px;
+      width: 150px;
+      color: black;
+      background-color: rgb(247, 241, 232);
+      border-radius: 10px;
+      cursor: pointer;
+   
+
+    }
+    .shoes{
+      height: 350px;
+     
+
+    }
+    .select-shoes{
+      height: 145px;
+      
+
+    }
+
+    .image{
+      height: 320px;
+      width: 75%;
+     
+      margin-left: 60px;
+      border-radius: 15px;
+     
+    }
+    .product{
+      border-radius: 15px;
+      height: 320px;
+      width: 100%;
+       object-fit: cover;
+
+    }
+
+    .selector{
+      height: 100px;
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+     
+      margin-left: 10px;
+      margin-top: 30px;
+      border-radius: 15px;
+     
+
+    }
+
+    .moins{
+      height: 30px;
+      width: 33%;
+      cursor: pointer;
+    }
+    .plus{
+      height: 30px;
+      width: 33%;
+      
+      cursor: pointer;
+    }
+    .nombre{
+      height: 30px;
+      width: 33%;
+      
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .compte{
+      height: 10px;
+      width: 33%;
+      padding: 11px;
+     
+    }
+
+    .select-img{
+
+      height: 80px;
+      width: 70px;
+      border: 1px solid orange ;
+      border-radius: 10px;
+    }
+
+    .select-img img{
+      height: 80px;
+      width: 70px;
+      border-radius: 10px;
+      cursor: pointer;
+     
+    }
+    
+
+
+
+
+
+
+    
+    
+    </style>
+
+<body>
+  <header>
+    <nav class="navigateur">
+      <div class="option">
+        <div class="logo">
+          <img src="./images/logo.svg">
+        </div>
+        <div class="opt">
+          <!--  lorsque le cursaur passe sur eux ya un trait orange qui s affiche en bas-->
+          
+          <p>Collections</p>
+          <p> Men</p>
+          <p> Women</p>
+          <p> About</p>
+          <p>Contact</p>
+
+        </div>
+      </div>
+      <div class="profil">
+        <img src="./images/icon-cart.svg" alt="">
+        <img src="./images/image-avatar.png" >
+        <!-- faire en sorte que quand le cursseur est dessus une fenetre s affiche-->
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main >
+
+    <div class="box">
+      <div class=" box1">
+        <div class="shoes">
+          <div class="image">
+            <img src="./images/image-product-1.jpg" class="product">
+
+          </div>
+
+        </div>
+        <div class="select-shoes">
+          <div class="selector">
+            <div class="select-img">
+              <img src="./images/image-product-1.jpg" >
+
+            </div>
+            <div class="select-img">
+              <img src="./images/image-product-2.jpg" >
+
+            </div>
+            <div class="select-img">
+              <img src="./images/image-product-3.jpg" >
+
+            </div>
+            <div class="select-img">
+              <img src="./images/image-product-4.jpg" >
+
+            </div>
+          
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="box2">
+        <div class="box2-text">
+          <p style="color: orange;">  Sneaker Company</p>
+          <h1 style="font-size: 50px;">Fall Limited Edition Sneakers</h1>
+          <p style="color: gray;">
+            These low-profile sneakers are your 
+            perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+
+        </div>
+        <div class="prix">
+          <p style="font-size: 20px;"> $125.00 </p>
+          <p style="color: orange;" class="reduction"> 50%</p>
+          <p style="color: gray;"> $250.00</p><!--- doit etre barrer-->
+        </div>
+        <div class="commande">
+          <div class="quantite">
+            <div class="moins">
+              <img src="./images/icon-minus.svg" class="compte">
+
+            </div>
+            <div class="nombre">3
+
+              
+            </div>
+            <div class="plus">
+              <img src="./images/icon-plus.svg" class="compte">
+              
+            </div>
+            
+        </div>
+          <div class="payer">
+            <button class="btn"><img src="./images/icon-cart.svg"> Add to Card</button>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </main>
+
+
+  
+ 
+ 
+ 
+  
+
+
+
+  
+
+  
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
